@@ -1,0 +1,80 @@
+:root{
+  --body-size: 15px;
+  --title-size: 16px;
+
+  --title-color: #0B7EA2;
+}
+
+#lever-jobs-container{
+  font-family: 'Inter', sans-serif;
+  margin: auto;
+  
+  padding: 1rem;
+}
+.lever-team{
+
+}
+.lever-department-title{
+  margin: 40px 0 24px 16px;
+}
+.lever-team-title, .lever-job-tag{
+  font-weight: 500;
+  font-size: var(--body-size);
+  line-height: 1.5;
+
+  margin: 0px;
+}
+.lever-job-tag{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  gap: 0rem 1rem;
+}
+.lever-job-title{
+  color: var(--title-color);
+  font-weight: 700;
+  line-height: 1.5;
+  font-size: var(--title-size);
+
+  margin: 0px;
+}
+.lever-job{
+  font-size: var(--title-size);
+
+  padding: 1rem; 
+  background-color: white;
+  
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 0.75fr;
+  gap: 1.5rem;
+  align-items: center;
+
+  border-radius: 4px;
+}
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+li{
+  margin: 4px 0rem;
+}
+#lever-jobs-container a{
+  color: #66666D;
+  text-decoration: none;
+}
+
+@media screen and (max-width:768px) {
+  .lever-job{
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding-right: 2rem;
+
+    position: relative;
+  }
+  .lever-job-icon{
+    position: absolute;
+    top: 12px;
+    right: 8px;
+  }
+}
